@@ -50,6 +50,9 @@ header {
   order: 1;
 }
 
+#current {
+  box-shadow: 2pt 2pt 5pt thistle;
+}
 nav {
   align-self: flex-end;
   padding-right: 2rem;
@@ -110,15 +113,15 @@ button a:active {
 }
 
 main {
-  padding: 10rem;
+  padding: 5rem;
   padding-top: 2rem;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   font-size: 2rem;
   display: grid;
   max-width: none;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-  grid-gap: 4rem;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 2rem;
 }
 
 article {
@@ -129,9 +132,55 @@ article {
   padding: 1rem;
 }
 
-article h1 {
+article h2 {
+  font-size: 2rem;
   margin: 1rem 1rem 1rem;
+}
+
+p {
+  margin: 1rem 1rem 1rem;
+  font-size: 1rem;
+  color: grey;
+}
+
+#price {
+  font-size: 1.5rem;
+  color: black;
+  margin-top: auto;
+}
+
+#discounted {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#discounted p {
+  color: black;
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+#discounted p:last-child {
+  background-color: thistle;
+  font-style: normal;
+  padding: 0.5rem;
+}
+
+.soldout img {
+  opacity: 40%;
+}
+
+#soldoutthingy {
+  font-size: 1em;
+  background-color: white;
+  color: black;
+  position: absolute;
+  box-shadow: 5pt 5pt 10pt thistle;
+  z-index: 1;
+  padding: 1rem;
   align-self: center;
+  order: -1;
 }
 
 article button {
