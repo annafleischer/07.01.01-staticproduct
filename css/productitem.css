@@ -1,0 +1,165 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+body {
+  background-color: whitesmoke;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#logo {
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  border-bottom: solid black 2pt;
+  box-shadow: 2pt 2pt 20pt thistle;
+}
+#logo h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: thistle;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+  padding: 1rem;
+  margin: 0;
+}
+#logo p {
+  color: grey;
+  text-indent: 0.8rem;
+  font-style: italic;
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+}
+#breadcrumbs {
+  align-self: flex-start;
+  text-decoration: none;
+  padding-left: 1rem;
+  order: 1;
+}
+#current {
+  box-shadow: 2pt 2pt 5pt thistle;
+}
+nav {
+  align-self: flex-end;
+  padding-right: 2rem;
+}
+nav ul {
+  padding: 1rem;
+  list-style: none;
+  display: flex;
+  font-size: 1.6rem;
+  flex-direction: row;
+  border: solid black 2pt;
+}
+nav ul li {
+  padding: 1rem;
+}
+li a {
+  text-decoration: none;
+}
+li a:link {
+  color: black;
+  text-decoration: underline black 2pt;
+}
+li a:visited {
+  color: black;
+}
+li a:hover {
+  color: thistle;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+li a:active {
+  background-color: rosybrown;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.deals {
+  margin: 2rem;
+  padding-top: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+  border: solid black 2pt;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+
+  padding: 5rem;
+  padding-top: 0;
+}
+
+img {
+  padding-top: 0;
+  max-width: 100%;
+  order: -1;
+  border: solid black 2pt;
+  box-shadow: 5pt 5pt 5pt thistle;
+}
+
+h1 {
+  order: -1;
+  padding: 0;
+  font-size: 3rem;
+}
+
+p {
+  margin: 1rem 1rem 1rem;
+  font-size: 2rem;
+  color: black;
+}
+
+#purchase {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10rem;
+  padding-top: 12rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+#purchaseBox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 2rem;
+  border: solid black 2pt;
+  border-radius: 2rem;
+  gap: 1rem;
+}
+
+#purchaseBox label {
+  padding: 1rem;
+}
+#purchaseBox label select {
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+#purchaseBox button {
+  background-color: black;
+  color: whitesmoke;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 5pt 5pt 10pt thistle;
+  font-size: 2rem;
+  padding: 1rem;
+  margin-top: 2rem;
+}
